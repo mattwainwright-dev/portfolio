@@ -20,12 +20,19 @@ function Footer() {
   let year = new Date().getFullYear()
   return <p>&copy; {year} Matthew Wainwright</p>
 }
+function GitHubLink() {
+  const url = "https://github.com/mattwainwright-dev"
+  const label = "GitHub Profile"
+
+  return <a href={url}>{label}</a>
+}
 
 function App() {
   return (
     <div>
       <Header />
       <p>Web developer building Pulse one component at a time.</p>
+      <GitHubLink />
       <Fortune />
       <Footer />
     </div>
