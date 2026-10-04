@@ -1,5 +1,6 @@
 import Header from './Header.jsx'
 import About from './About.jsx'
+import Projects from './Projects.jsx'
 
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
@@ -48,6 +49,7 @@ function App() {
       <p>Web developer building Pulse one component at a time.</p>
       <ProjectCount />
       <About />
+      <Projects />
       <GitHubLink />
       <Fortune />
       <Footer />
