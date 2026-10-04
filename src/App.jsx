@@ -28,11 +28,25 @@ function GitHubLink() {
   return <a href={url}>{label}</a>
 }
 
+function ProjectCount() {
+  let projects = [
+  "Buttons Rescue",
+  "Signup Page",
+  "Greeting Card Generator",
+  "Click Lab",
+  "API Tutorial",
+  "Data Playlist",
+  "Pulse Capstone"
+]
+  return <p>I completed {projects.length} Level 2 projects.</p>
+}
+
 function App() {
   return (
     <div>
       <Header />
       <p>Web developer building Pulse one component at a time.</p>
+      <ProjectCount />
       <About />
       <GitHubLink />
       <Fortune />
