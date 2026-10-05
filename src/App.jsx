@@ -6,6 +6,7 @@ import Fortune from './Fortune.jsx'
 import ProjectCount from './ProjectCount.jsx'
 import PulseCapstonePortfolioCard from './PulseCapstonePortfolioCard.jsx'
 import ApiTutorialPortfolioCard from './ApiTutorialPortfolioCard.jsx'
+import PulseMotionPortfolioCard from './PulseMotionPortfolioCard.jsx'
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Fortune />
       <PulseCapstonePortfolioCard />
       <ApiTutorialPortfolioCard />
+      <PulseMotionPortfolioCard />
       <Footer />
     </div>
   );
