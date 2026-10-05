@@ -14,8 +14,8 @@ This portfolio documents my progress through CodeX Academy and the React skills 
 | `GitHubLink` | a link to my GitHub profile | `url` and `label` variables |
 | `Fortune` | a random Pulse-related line | a list and `randomNumber` |
 | `Footer` | &copy; and the current year | the year the page is opened |
-| `PulseCapstoneCard` | Pulse Capstone description and two links | variables inside the component |
-| `ApiTutorialCard` | API Tutorial description and two links | variables inside the component |
+| `PulseCapstonePortfolioCard` | Pulse Capstone description and two links | variables inside the component |
+| `ApiTutorialPortfolioCard` | API Tutorial description and two links | variables inside the component |
 
 ## What I'm adding next
 
