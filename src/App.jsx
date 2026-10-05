@@ -14,7 +14,7 @@ import ProjectCount from './ProjectCount.jsx'
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <p>Web developer building Pulse one component at a time.</p>
       <ProjectCount />
