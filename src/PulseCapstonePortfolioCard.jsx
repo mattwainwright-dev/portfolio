@@ -1,6 +1,6 @@
 function PulseCapstonePortfolioCard() {
   let name = "Pulse Capstone"
-  let description = "An API-driven music discovery project built with JavaScript."
+  let description = "A music discovery experience I built to create a community in motion around artists, music, and the individual stories united behind them."
   let liveUrl = "https://mattwainwright-dev.github.io/capstone"
   let repoUrl = "https://github.com/mattwainwright-dev/capstone"
 

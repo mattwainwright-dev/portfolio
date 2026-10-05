@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <p>Web developer building Pulse one component at a time.</p>
+      <p>Web development student building at the intersection of music, creativity, and code.</p>
       <ProjectCount />
       <About />
       <GitHubLink />

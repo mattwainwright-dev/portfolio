@@ -1,6 +1,6 @@
 function ApiTutorialPortfolioCard() {
   let name = "API Tutorial"
-  let description = "A Level 2 project that uses a data API to dynamically render records."
+  let description = "A step-by-step tutorial I built to demonstrate how an API request becomes data we can use on a webpage."
   let liveUrl = "https://mattwainwright-dev.github.io/api-tutorial/"
   let repoUrl = "https://github.com/mattwainwright-dev/api-tutorial"
 
