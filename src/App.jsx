@@ -5,6 +5,7 @@ import GitHubLink from './GitHubLink.jsx'
 import Footer from './Footer.jsx'
 import Fortune from './Fortune.jsx'
 import ProjectCount from './ProjectCount.jsx'
+import PulseCapstonePortfolioCard from './PulseCapstonePortfolioCard.jsx'
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Projects />
       <GitHubLink />
       <Fortune />
+      <PulseCapstonePortfolioCard />
       <Footer />
     </div>
   );
