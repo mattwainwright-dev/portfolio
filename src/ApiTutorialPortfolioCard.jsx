@@ -9,7 +9,7 @@ function ApiTutorialPortfolioCard() {
       <h2>{name}</h2>
       <p>{description}</p>
       <p>
-        <a href={liveUrl}>See it live</a> · <a href={repoUrl}>Read the code</a>
+        <a href={liveUrl} role="button">See it live</a> <a href={repoUrl} role="button" className="outline">Read the code</a>
       </p>
     </article>
   )

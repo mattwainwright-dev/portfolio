@@ -1,4 +1,5 @@
 import Header from './Header.jsx'
+import Nav from './Nav.jsx'
 import About from './About.jsx'
 import GitHubLink from './GitHubLink.jsx'
 import Footer from './Footer.jsx'
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <Nav />
       <p>Web development student building at the intersection of music, creativity, and code.</p>
       <ProjectCount />
       <About />
