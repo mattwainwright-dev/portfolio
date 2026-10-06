@@ -1,4 +1,5 @@
 import Header from './Header.jsx'
+import Hero from './Hero.jsx'
 import Nav from './Nav.jsx'
 import About from './About.jsx'
 import GitHubLink from './GitHubLink.jsx'
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <Hero />
       <Nav />
       <p>Web development student building at the intersection of music, creativity, and code.</p>
       <ProjectCount />
