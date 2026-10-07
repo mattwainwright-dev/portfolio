@@ -1,8 +1,8 @@
 function PulseMotionPortfolioCard() {
-  let name = "Pulse Motion"
-  let description = "An interactive music visualization concept exploring how motion, sound, and code can become one experience."
-  let liveUrl = "https://mattwainwright-dev.github.io/pulse-motion/"
-  let repoUrl = "https://github.com/mattwainwright-dev/pulse-motion"
+  const name = "Pulse Motion"
+  const description = "An interactive music visualization concept exploring how motion, sound, and code can become one experience."
+  const liveUrl = "https://mattwainwright-dev.github.io/pulse-motion/"
+  const repoUrl = "https://github.com/mattwainwright-dev/pulse-motion"
 
   return (
     <article>
