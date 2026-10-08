@@ -6,14 +6,14 @@ function ApiTutorialPortfolioCard() {
   const repoUrl = "https://github.com/mattwainwright-dev/api-tutorial";
 
   return (
-    <article>
+    <article className="pulse-card">
       <h2>{name}</h2>
       <p>{description}</p>
       <p>
-        <a href={liveUrl} role="button">
+        <a href={liveUrl} role="button" className="pulse-button">
           See it live
         </a>{" "}
-        <a href={repoUrl} role="button" className="outline">
+        <a href={repoUrl} role="button" className="outline pulse-button">
           Read the code
         </a>
       </p>
