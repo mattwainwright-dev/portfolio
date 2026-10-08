@@ -5,11 +5,11 @@ function PulseCapstonePortfolioCard() {
   const  repoUrl = "https://github.com/mattwainwright-dev/capstone"
 
   return (
-    <article>
+    <article className="pulse-card">
       <h2>{name}</h2>
       <p>{description}</p>
       <p>
-        <a href={liveUrl} role="button">See it live</a> <a href={repoUrl} role="button" className="outline">Read the code</a>
+        <a href={liveUrl} role="button" className="pulse-button">See it live</a> <a href={repoUrl} role="button" className="outline pulse-button">Read the code</a>
       </p>
     </article>
   )
