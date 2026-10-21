@@ -2,3 +2,9 @@
 .hero {
   margin-bottom: 1rem;
 }
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
