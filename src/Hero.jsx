@@ -1,19 +1,34 @@
-import { useState } from 'react'
-import heroPhoto from './hero-photo.js'
-import './hero.css'
+import { useState } from "react";
+import heroPhoto from "./hero-photo.js";
+import "./hero.css";
 
 function Hero() {
-  const [sat, setSat] = useState(0)
+  const [sat, setSat] = useState(0);
+  const [sepia, setSepia] = useState(0);
 
   const showColor = () => {
-    setSat(0)
-  }
+    setSat(0);
+  };
 
   const showBlackAndWhite = () => {
-    setSat(-100)
-  }
+    setSat(-100);
+  };
 
-  const [src, alt] = heroPhoto(1200, 500, sat, "Abstract black, cyan, and orange fluid pattern")
+  const showNoSepia = () => {
+    setSepia(0);
+  };
+
+  const showSepia = () => {
+    setSepia(80);
+  };
+
+  const [src, alt] = heroPhoto(
+    1200,
+    500,
+    sat,
+    sepia,
+    "Abstract black, cyan, and orange fluid pattern",
+  );
 
   return (
     <div>
@@ -23,10 +38,11 @@ function Hero() {
       <p className="hero-buttons">
         <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and White</button>
+        <button onClick={showNoSepia}>No Sepia</button>
+        <button onClick={showSepia}>Sepia</button>
       </p>
     </div>
-  )
+  );
 }
 
-export default Hero
-
+export default Hero;
