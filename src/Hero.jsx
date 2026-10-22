@@ -23,6 +23,7 @@ function Hero() {
   };
 
   const [src, alt] = heroPhoto(
+    "premium_photo-1670455445879-07d27cb842c1",
     1200,
     500,
     sat,
