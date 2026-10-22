@@ -3,6 +3,18 @@ import heroPhoto from "./hero-photo.js";
 import "./hero.css";
 
 function Hero() {
+  const photos = [
+    "premium_photo-1670455445879-07d27cb842c1",
+    "/gothic-church.jpg",
+    "/neon-bumper-cars.jpg",
+  ];
+
+  const descriptions = [
+    "Abstract black, cyan, and orange fluid pattern",
+    "Gothic church glowing red in a blue foggy forest",
+    "Neon bumper cars beneath colorful lights",
+  ];
+
   const [sat, setSat] = useState(0);
   const [sepia, setSepia] = useState(0);
 
@@ -23,12 +35,12 @@ function Hero() {
   };
 
   const [src, alt] = heroPhoto(
-    "premium_photo-1670455445879-07d27cb842c1",
+    photos[2],
     1200,
     500,
     sat,
     sepia,
-    "Abstract black, cyan, and orange fluid pattern",
+    descriptions[2],
   );
 
   return (
