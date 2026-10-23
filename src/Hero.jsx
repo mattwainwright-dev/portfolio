@@ -18,6 +18,7 @@ function Hero() {
   const [index, setIndex] = useState(0);
   const [sat, setSat] = useState(0);
   const [sepia, setSepia] = useState(0);
+  
 
   const nextPhoto = () => {
     if (index === photos.length - 1) {
