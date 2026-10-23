@@ -15,8 +15,25 @@ function Hero() {
     "Neon bumper cars beneath colorful lights",
   ];
 
+  const [index, setIndex] = useState(0);
   const [sat, setSat] = useState(0);
   const [sepia, setSepia] = useState(0);
+
+  const nextPhoto = () => {
+    if (index === photos.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  };
+
+  const previousPhoto = () => {
+    if (index === 0) {
+      setIndex(photos.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  };
 
   const showColor = () => {
     setSat(0);
@@ -35,12 +52,12 @@ function Hero() {
   };
 
   const [src, alt] = heroPhoto(
-    photos[2],
+    photos[index],
     1200,
     500,
     sat,
     sepia,
-    descriptions[2],
+    descriptions[index],
   );
 
   return (
@@ -49,6 +66,8 @@ function Hero() {
         <img src={src} alt={alt} />
       </div>
       <p className="hero-buttons">
+        <button onClick={previousPhoto}>Previous</button>
+        <button onClick={nextPhoto}>Next</button>
         <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and White</button>
         <button onClick={showNoSepia}>No Sepia</button>
