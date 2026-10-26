@@ -9,13 +9,13 @@ This portfolio documents my progress through CodeX Academy and the React skills 
 | Component | What it shows | Where its values come from | What it remembers |
 | --- | --- | --- | --- |
 | `Header` | my name | typed into the JSX |
-| `Hero` | my hero photo | `heroPhoto`, which calls `imageUrl` | whether the photo is in color |
+| `Hero` | my hero photo | `heroPhoto`, which calls `imageUrl` | which photo is showing, whether it is in color, and its sepia setting |
 | `About` | information about me and what I build | typed into the JSX |
 | `ProjectCount` | the number of Level 2 projects I completed | a list and `projects.length` |
 | `GitHubLink` | a link to my GitHub profile | `url` and `label` variables |
 | `Fortune` | a random Pulse-related line | a list and `randomNumber` | which fortune is showing |
 | `Footer` | &copy; and the current year | the year the page is opened |
-| `PulseCapstonePortfolioCard` | Pulse Capstone description and two links | variables inside the component | its likes |
+| `PulseCapstonePortfolioCard` | Pulse Capstone description and two links | variables inside the component | its likes, and whether it shows more |
 | `ApiTutorialPortfolioCard` | API Tutorial description and two links | variables inside the component | its likes |
 | `PulseMotionPortfolioCard` | Pulse Motion music visualization and project links | variables inside the component | its likes |
 

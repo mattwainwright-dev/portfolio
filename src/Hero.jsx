@@ -18,7 +18,6 @@ function Hero() {
   const [index, setIndex] = useState(0);
   const [sat, setSat] = useState(0);
   const [sepia, setSepia] = useState(0);
-  
 
   const nextPhoto = () => {
     if (index === photos.length - 1) {
@@ -67,8 +66,8 @@ function Hero() {
         <img src={src} alt={alt} />
       </div>
       <p className="hero-buttons">
-        <button onClick={previousPhoto}>Previous</button>
-        <button onClick={nextPhoto}>Next</button>
+        <button onClick={previousPhoto}>Previous Pulse</button>
+        <button onClick={nextPhoto}>Next Pulse</button>
         <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and White</button>
         <button onClick={showNoSepia}>No Sepia</button>
