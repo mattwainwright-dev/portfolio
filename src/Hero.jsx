@@ -15,57 +15,59 @@ function Hero() {
     "Crowd enjoying a concert",
   ];
 
-  const [index, setIndex] = useState(0);
-  const [sat, setSat] = useState(0);
-  const [sepia, setSepia] = useState(0);
+  const [settings, setSettings] = useState({
+    index: 0,
+    sat: 0,
+    sepia: 0,
+  });
 
   const nextPhoto = () => {
-    if (index === photos.length - 1) {
-      setIndex(0);
+    if (settings.index === photos.length - 1) {
+      setSettings({ ...settings, index: 0 });
     } else {
-      setIndex(index + 1);
+      setSettings({ ...settings, index: settings.index + 1 });
     }
   };
 
   const previousPhoto = () => {
-    if (index === 0) {
-      setIndex(photos.length - 1);
+    if (settings.index === 0) {
+      setSettings({ ...settings, index: photos.length - 1 });
     } else {
-      setIndex(index - 1);
+      setSettings({ ...settings, index: settings.index - 1 });
     }
   };
 
-  const showFirst = () => setIndex(0);
-  const showSecond = () => setIndex(1);
-  const showThird = () => setIndex(2);
+  const showFirst = () => setSettings({ ...settings, index: 0 });
+  const showSecond = () => setSettings({ ...settings, index: 1 });
+  const showThird = () => setSettings({ ...settings, index: 2 });
 
   const showColor = () => {
-    setSat(0);
+    setSettings({ ...settings, sat: 0 });
   };
 
   const showBlackAndWhite = () => {
-    setSat(-100);
+    setSettings({ ...settings, sat: -100 });
   };
 
   const showNoSepia = () => {
-    setSepia(0);
+    setSettings({ ...settings, sepia: 0 });
   };
 
   const showSepia = () => {
-    setSepia(80);
+    setSettings({ ...settings, sepia: 80 });
   };
 
   const readSepia = (event) => {
-    setSepia(Number(event.target.value));
+    setSettings({ ...settings, sepia: Number(event.target.value) });
   };
 
   const [src, alt] = heroPhoto({
-    photo: photos[index],
+    photo: photos[settings.index],
     width: 1200,
     height: 500,
-    sat,
-    sepia,
-    description: descriptions[index],
+    sat: settings.sat,
+    sepia: settings.sepia,
+    description: descriptions[settings.index],
   });
 
   return (
@@ -89,10 +91,10 @@ function Hero() {
         min="0"
         max="100"
         step="10"
-        value={sepia}
+        value={settings.sepia}
         onChange={readSepia}
       />
-      <p>Sepia: {sepia}</p>
+      <p>Sepia: {settings.sepia}</p>
     </div>
   );
 }
