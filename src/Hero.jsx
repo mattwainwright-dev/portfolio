@@ -55,6 +55,10 @@ function Hero() {
     setSepia(80);
   };
 
+  const readSepia = (event) => {
+    setSepia(Number(event.target.value));
+  };
+
   const [src, alt] = heroPhoto(
     photos[index],
     1200,
@@ -80,6 +84,15 @@ function Hero() {
         <button onClick={showNoSepia}>No Sepia</button>
         <button onClick={showSepia}>Sepia</button>
       </p>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        step="10"
+        value={sepia}
+        onChange={readSepia}
+      />
+      <p>Sepia: {sepia}</p>
     </div>
   );
 }
