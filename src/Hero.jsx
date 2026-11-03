@@ -35,6 +35,10 @@ function Hero() {
     }
   };
 
+  const showFirst = () => setIndex(0);
+  const showSecond = () => setIndex(1);
+  const showThird = () => setIndex(2);
+
   const showColor = () => {
     setSat(0);
   };
@@ -68,6 +72,9 @@ function Hero() {
       <p className="hero-buttons">
         <button onClick={previousPhoto}>Previous Pulse</button>
         <button onClick={nextPhoto}>Next Pulse</button>
+        <button onClick={showFirst}>1</button>
+        <button onClick={showSecond}>2</button>
+        <button onClick={showThird}>3</button>
         <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and White</button>
         <button onClick={showNoSepia}>No Sepia</button>
