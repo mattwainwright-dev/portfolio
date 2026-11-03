@@ -59,14 +59,14 @@ function Hero() {
     setSepia(Number(event.target.value));
   };
 
-  const [src, alt] = heroPhoto(
-    photos[index],
-    1200,
-    500,
+  const [src, alt] = heroPhoto({
+    photo: photos[index],
+    width: 1200,
+    height: 500,
     sat,
     sepia,
-    descriptions[index],
-  );
+    description: descriptions[index],
+  });
 
   return (
     <div>
