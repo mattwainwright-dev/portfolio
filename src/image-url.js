@@ -1,4 +1,4 @@
-const imageUrl = ({ photo, width, height, sat, sepia }) => {
+const imageUrl = ({ photo, width, height, sat = 0, sepia }) => {
   if (photo.startsWith("/")) {
     return photo;
   }
