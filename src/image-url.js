@@ -4,7 +4,7 @@ const imageUrl = (photo, width, height, sat, sepia) => {
   }
 
   return (
-    "https://plus.unsplash.com/" +
+    "https://images.unsplash.com/" +
     photo +
     "?w=" +
     width +

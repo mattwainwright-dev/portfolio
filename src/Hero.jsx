@@ -4,15 +4,15 @@ import "./hero.css";
 
 function Hero() {
   const photos = [
-    "premium_photo-1670455445879-07d27cb842c1",
-    "/gothic-church.jpg",
-    "/neon-bumper-cars.jpg",
+    "photo-1470225620780-dba8ba36b745",
+    "photo-1493225457124-a3eb161ffa5f",
+    "photo-1514525253161-7a46d19cd819",
   ];
 
   const descriptions = [
-    "Abstract black, cyan, and orange fluid pattern",
-    "Gothic church glowing red in a blue foggy forest",
-    "Neon bumper cars beneath colorful lights",
+    "Colorful stage lights at a music event",
+    "Live music performance",
+    "Crowd enjoying a concert",
   ];
 
   const [index, setIndex] = useState(0);
