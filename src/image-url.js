@@ -1,4 +1,20 @@
-const imageUrl = (width, height) =>
-  "https://plus.unsplash.com/premium_photo-1670455445879-07d27cb842c1?w=" + width + "&h=" + height + "&fit=crop&auto=format"
+const imageUrl = ({ photo, width, height, sat = 0, sepia }) => {
+  if (photo.startsWith("/")) {
+    return photo;
+  }
+
+  return (
+    "https://images.unsplash.com/" +
+    photo +
+    "?w=" +
+    width +
+    "&h=" +
+    height +
+    "&fit=crop&auto=format&sat=" +
+    sat +
+    "&sepia=" +
+    sepia
+  );
+};
 
 export default imageUrl

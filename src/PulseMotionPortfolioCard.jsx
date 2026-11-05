@@ -1,8 +1,15 @@
+import { useState } from 'react'
 function PulseMotionPortfolioCard() {
   const name = "Pulse Motion"
   const description = "An interactive music visualization concept exploring how motion, sound, and code can become one experience."
   const liveUrl = "https://mattwainwright-dev.github.io/pulse-motion/"
   const repoUrl = "https://github.com/mattwainwright-dev/pulse-motion"
+
+  const [likes, setLikes] = useState(0)
+
+  const addLike = () => {
+    setLikes(likes + 1)
+  }
 
   return (
     <article className="pulse-card">
@@ -16,6 +23,7 @@ function PulseMotionPortfolioCard() {
       <p>
        <a href={liveUrl} role="button" className="pulse-button">See it live</a> <a href={repoUrl} role="button" className="outline pulse-button">Read the code</a>
       </p>
+      <button onClick={addLike}>Like {likes}</button>
     </article>
   )
 }

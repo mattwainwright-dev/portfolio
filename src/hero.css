@@ -2,3 +2,17 @@
 .hero {
   margin-bottom: 1rem;
 }
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 12 / 5;
+  object-fit: cover;
+  display: block;
+}

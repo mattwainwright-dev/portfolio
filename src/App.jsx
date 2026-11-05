@@ -1,28 +1,27 @@
-import Header from './Header.jsx'
-import Hero from './Hero.jsx'
-import Nav from './Nav.jsx'
-import About from './About.jsx'
-import GitHubLink from './GitHubLink.jsx'
-import Footer from './Footer.jsx'
-import Fortune from './Fortune.jsx'
-import ProjectCount from './ProjectCount.jsx'
-import PulseCapstonePortfolioCard from './PulseCapstonePortfolioCard.jsx'
-import ApiTutorialPortfolioCard from './ApiTutorialPortfolioCard.jsx'
-import PulseMotionPortfolioCard from './PulseMotionPortfolioCard.jsx'
-
-
-
-
-
+import Header from "./Header.jsx";
+import Hero from "./Hero.jsx";
+import Nav from "./Nav.jsx";
+import About from "./About.jsx";
+import GitHubLink from "./GitHubLink.jsx";
+import Footer from "./Footer.jsx";
+import Fortune from "./Fortune.jsx";
+import ProjectCount from "./ProjectCount.jsx";
+import PulseCapstonePortfolioCard from "./PulseCapstonePortfolioCard.jsx";
+import ApiTutorialPortfolioCard from "./ApiTutorialPortfolioCard.jsx";
+import PulseMotionPortfolioCard from "./PulseMotionPortfolioCard.jsx";
 
 
 function App() {
+
   return (
     <div className="container">
       <Header />
       <Hero />
       <Nav />
-      <p>Web development student building at the intersection of music, creativity, and code.</p>
+      <p>
+        Web development student building at the intersection of music,
+        creativity, and code.
+      </p>
       <ProjectCount />
       <About />
       <GitHubLink />
