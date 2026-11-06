@@ -25,6 +25,7 @@ function ProjectCard({ project }) {
   return (
     <article className="pulse-card">
       <h2>{project.name}</h2>
+      <p>Status: {project.status}</p>
       <p>{text}</p>
       <p>
         <a href={project.liveUrl} role="button" className="pulse-button">
