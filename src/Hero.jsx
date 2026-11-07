@@ -76,19 +76,18 @@ function Hero() {
       <div className="hero">
         <img src={src} alt={alt} />
       </div>
-      <p className="hero-buttons">
-        <PhotoControls
-          onPrevious={previousPhoto}
-          onNext={nextPhoto}
-          onFirst={showFirst}
-          onSecond={showSecond}
-          onThird={showThird}
-          onColor={showColor}
-          onBlackAndWhite={showBlackAndWhite}
-          onNoSepia={showNoSepia}
-          onSepia={showSepia}
-        />
-      </p>
+      <PhotoControls
+        onPrevious={previousPhoto}
+        onNext={nextPhoto}
+        onFirst={showFirst}
+        onSecond={showSecond}
+        onThird={showThird}
+        onColor={showColor}
+        onBlackAndWhite={showBlackAndWhite}
+        onNoSepia={showNoSepia}
+        onSepia={showSepia}
+      />
+
       <input
         type="range"
         min="0"
