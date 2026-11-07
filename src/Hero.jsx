@@ -62,6 +62,10 @@ function Hero() {
     setSettings({ ...settings, sepia: Number(event.target.value) });
   };
 
+  const resetHero = () => {
+    setSettings({ index: 0, sat: 0, sepia: 0 });
+  };
+
   const [src, alt] = heroPhoto({
     photo: photos[settings.index],
     width: 1200,
@@ -86,6 +90,7 @@ function Hero() {
         onBlackAndWhite={showBlackAndWhite}
         onNoSepia={showNoSepia}
         onSepia={showSepia}
+        onReset={resetHero}
       />
 
       <input
