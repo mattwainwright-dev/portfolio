@@ -91,6 +91,8 @@ function Hero() {
         onNoSepia={showNoSepia}
         onSepia={showSepia}
         onReset={resetHero}
+        position={settings.index + 1}
+        total={photos.length}
       />
 
       <input
