@@ -1,6 +1,7 @@
 import { useState } from "react";
 import heroPhoto from "./hero-photo.js";
 import "./hero.css";
+import PhotoControls from "./PhotoControls.jsx";
 
 function Hero() {
   const photos = [
@@ -61,6 +62,10 @@ function Hero() {
     setSettings({ ...settings, sepia: Number(event.target.value) });
   };
 
+  const resetHero = () => {
+    setSettings({ index: 0, sat: 0, sepia: 0 });
+  };
+
   const [src, alt] = heroPhoto({
     photo: photos[settings.index],
     width: 1200,
@@ -75,17 +80,19 @@ function Hero() {
       <div className="hero">
         <img src={src} alt={alt} />
       </div>
-      <p className="hero-buttons">
-        <button onClick={previousPhoto}>Previous Pulse</button>
-        <button onClick={nextPhoto}>Next Pulse</button>
-        <button onClick={showFirst}>1</button>
-        <button onClick={showSecond}>2</button>
-        <button onClick={showThird}>3</button>
-        <button onClick={showColor}>Color</button>
-        <button onClick={showBlackAndWhite}>Black and White</button>
-        <button onClick={showNoSepia}>No Sepia</button>
-        <button onClick={showSepia}>Sepia</button>
-      </p>
+      <PhotoControls
+        onPrevious={previousPhoto}
+        onNext={nextPhoto}
+        onFirst={showFirst}
+        onSecond={showSecond}
+        onThird={showThird}
+        onColor={showColor}
+        onBlackAndWhite={showBlackAndWhite}
+        onNoSepia={showNoSepia}
+        onSepia={showSepia}
+        onReset={resetHero}
+      />
+
       <input
         type="range"
         min="0"
