@@ -23,9 +23,13 @@ function App() {
       <About />
       <GitHubLink />
       <Fortune />
-      <ProjectCard project={projects[0]} featured={true} />
-      <ProjectCard project={projects[1]} />
-      <ProjectCard project={projects[2]} />
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={project.repoUrl}
+          project={project}
+          featured={index === 0}
+        />
+      ))}
       <Footer />
     </div>
   );
